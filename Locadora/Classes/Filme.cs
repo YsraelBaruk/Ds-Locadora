@@ -8,17 +8,18 @@ namespace Locadora
 {
     class Filme
     {
-        private string nome;
-        private int ano;
-        private double avaliacao;
-        private string sinopse;
-        private string genero;
+        public string nome;
+        public int ano;
+        public double avaliacao;
+        public string sinopse;
+        public string genero;
 
         public string Nome { get => nome; set => nome = value; }
         public int Ano { get => ano; set => ano = value; }
         public double Avaliacao { get => avaliacao; set => avaliacao = value; }
         public string Sinopse { get => sinopse; set => sinopse = value; }
         public string Genero { get => genero; set => genero = value; }
+        public static object Cells { get; internal set; }
 
         public Filme(string nome, int ano, double avaliacao, string sinopse, string genero)
         {
@@ -30,5 +31,14 @@ namespace Locadora
         }
 
         public Filme(){}
+
+        public bool Listar()
+        {
+            if ()
+            {
+
+            }
+            return false;
+        }
     }
 }

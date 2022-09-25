@@ -18,5 +18,11 @@ namespace Locadora
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
+
+        public static List<Filme> Lista()
+        {
+            
+            return Lista();
+        }
     }
 }

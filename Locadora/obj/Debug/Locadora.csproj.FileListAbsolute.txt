@@ -18,3 +18,13 @@ C:\Users\Aluno-ETEC\Downloads\ds22-09-20Locadora\Locadora\obj\Debug\Locadora.csp
 C:\Users\Aluno-ETEC\Downloads\ds22-09-20Locadora\Locadora\obj\Debug\Locadora.csproj.CoreCompileInputs.cache
 C:\Users\Aluno-ETEC\Downloads\ds22-09-20Locadora\Locadora\obj\Debug\Locadora.exe
 C:\Users\Aluno-ETEC\Downloads\ds22-09-20Locadora\Locadora\obj\Debug\Locadora.pdb
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\bin\Debug\Locadora.exe.config
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\bin\Debug\Locadora.exe
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\bin\Debug\Locadora.pdb
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.AssemblyReference.cache
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.Form1.resources
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.Properties.Resources.resources
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.GenerateResource.cache
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.CoreCompileInputs.cache
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.exe
+C:\Users\israe\Documents\Github\Ds-Locadora\Locadora\obj\Debug\Locadora.pdb
