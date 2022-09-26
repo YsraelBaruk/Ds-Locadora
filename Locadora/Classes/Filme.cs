@@ -34,7 +34,14 @@ namespace Locadora
 
         public bool Listar()
         {
-            return true;
+            if (!(this.nome))
+            {
+                return false;
+            }
+            else
+            {
+
+            }
         }
     }
 }

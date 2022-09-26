@@ -44,11 +44,8 @@ namespace Locadora
                 //txtAvaliacao.Text = Convert.ToString(f.Avaliacao);
                 //f.Sinopse = txtSinopse.Text;
                 //f.Genero = txtGenero.Text;
-
                 dataGridView1.Rows.Add(f.nome, f.ano, f.avaliacao, f.sinopse, f.genero);
-            }
-            
-            //Listar();
+            }                       
         }   
 
         private void btnAluga_Click(object sender, EventArgs e)
@@ -64,6 +61,8 @@ namespace Locadora
             txtAvaliacao.Text = flm.Cells[2].Value.ToString();
             txtSinopse.Text = flm.Cells[3].Value.ToString();
             txtGenero.Text = flm.Cells[4].Value.ToString();
+
+            //Listar();
         }
 
 
