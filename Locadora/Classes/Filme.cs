@@ -34,11 +34,7 @@ namespace Locadora
 
         public bool Listar()
         {
-            if ()
-            {
-
-            }
-            return false;
+            return true;
         }
     }
 }

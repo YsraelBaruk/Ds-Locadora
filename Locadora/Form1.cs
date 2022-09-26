@@ -38,11 +38,14 @@ namespace Locadora
             
             foreach (var f in filme)
             {
-                f.Nome = txtNome.Text;
-                txtAno.Text = Convert.ToString(f.Ano);
-                txtAvaliacao.Text = Convert.ToString(f.Avaliacao);
-                f.Sinopse = txtSinopse.Text;
-                f.Genero = txtGenero.Text;
+                //f.Nome = txtNome.Text;
+                //txtAno.Text = Convert.ToString(f.Ano);
+                ////f.ano = Convert.ToInt32(txtAno);
+                //txtAvaliacao.Text = Convert.ToString(f.Avaliacao);
+                //f.Sinopse = txtSinopse.Text;
+                //f.Genero = txtGenero.Text;
+
+                dataGridView1.Rows.Add(f.nome, f.ano, f.avaliacao, f.sinopse, f.genero);
             }
             
             //Listar();

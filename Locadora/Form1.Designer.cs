@@ -54,7 +54,7 @@ namespace Locadora
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = true;
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -136,7 +136,6 @@ namespace Locadora
             // 
             // txtSinopse
             // 
-            this.txtSinopse.Enabled = true;
             this.txtSinopse.Location = new System.Drawing.Point(9, 168);
             this.txtSinopse.Name = "txtSinopse";
             this.txtSinopse.Size = new System.Drawing.Size(208, 94);
@@ -152,7 +151,6 @@ namespace Locadora
             this.txtGenero.Size = new System.Drawing.Size(102, 23);
             this.txtGenero.TabIndex = 8;
             this.txtGenero.UseWaitCursor = true;
-            this.txtGenero.Text = "";
             // 
             // txtAvaliacao
             // 
@@ -162,7 +160,6 @@ namespace Locadora
             this.txtAvaliacao.Size = new System.Drawing.Size(102, 23);
             this.txtAvaliacao.TabIndex = 7;
             this.txtAvaliacao.UseWaitCursor = true;
-            this.txtAvaliacao.Text = "";
             // 
             // txtAno
             // 
@@ -173,7 +170,6 @@ namespace Locadora
             this.txtAno.TabIndex = 6;
             this.txtAno.UseWaitCursor = true;
             this.txtAno.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.txtAno.Text = "";
             // 
             // txtNome
             // 
@@ -183,7 +179,6 @@ namespace Locadora
             this.txtNome.Size = new System.Drawing.Size(102, 23);
             this.txtNome.TabIndex = 5;
             this.txtNome.UseWaitCursor = true;
-            this.txtNome.Text = "";
             // 
             // label5
             // 
