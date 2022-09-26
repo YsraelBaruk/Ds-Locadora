@@ -47,14 +47,13 @@ namespace Locadora
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.addFilme = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToAddRows = true;
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -136,7 +135,6 @@ namespace Locadora
             // 
             // txtSinopse
             // 
-            this.txtSinopse.Enabled = true;
             this.txtSinopse.Location = new System.Drawing.Point(9, 168);
             this.txtSinopse.Name = "txtSinopse";
             this.txtSinopse.Size = new System.Drawing.Size(208, 94);
@@ -152,7 +150,6 @@ namespace Locadora
             this.txtGenero.Size = new System.Drawing.Size(102, 23);
             this.txtGenero.TabIndex = 8;
             this.txtGenero.UseWaitCursor = true;
-            this.txtGenero.Text = "";
             // 
             // txtAvaliacao
             // 
@@ -162,7 +159,6 @@ namespace Locadora
             this.txtAvaliacao.Size = new System.Drawing.Size(102, 23);
             this.txtAvaliacao.TabIndex = 7;
             this.txtAvaliacao.UseWaitCursor = true;
-            this.txtAvaliacao.Text = "";
             // 
             // txtAno
             // 
@@ -173,7 +169,6 @@ namespace Locadora
             this.txtAno.TabIndex = 6;
             this.txtAno.UseWaitCursor = true;
             this.txtAno.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.txtAno.Text = "";
             // 
             // txtNome
             // 
@@ -183,7 +178,6 @@ namespace Locadora
             this.txtNome.Size = new System.Drawing.Size(102, 23);
             this.txtNome.TabIndex = 5;
             this.txtNome.UseWaitCursor = true;
-            this.txtNome.Text = "";
             // 
             // label5
             // 
@@ -236,23 +230,11 @@ namespace Locadora
             this.label1.Text = "Nome";
             this.label1.UseWaitCursor = true;
             // 
-            // addFilme
-            // 
-            this.addFilme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addFilme.Location = new System.Drawing.Point(744, 411);
-            this.addFilme.Name = "addFilme";
-            this.addFilme.Size = new System.Drawing.Size(113, 34);
-            this.addFilme.TabIndex = 2;
-            this.addFilme.Text = "Add Filme";
-            this.addFilme.UseVisualStyleBackColor = true;
-            this.addFilme.Click += new System.EventHandler(this.addFilme_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 468);
-            this.Controls.Add(this.addFilme);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
@@ -285,7 +267,6 @@ namespace Locadora
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.Button addFilme;
     }
 }
 

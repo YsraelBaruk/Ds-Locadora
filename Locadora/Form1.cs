@@ -30,19 +30,15 @@ namespace Locadora
         public void Form1_Load(object sender, EventArgs e)
         {
             List<Filme> filme = new List<Filme>();
-            filme.Add(new Filme() { Nome = "Homem Aranha", Ano = 2002, Avaliacao = 7, Sinopse = "Quando o morde uma aranha", Genero = "Ação" });
-            filme.Add(new Filme() { Nome = "Batman", Ano = 2022, Avaliacao = 7, Sinopse = "Batman se aventura", Genero = "Ação" });
-            filme.Add(new Filme() { Nome = "Tropa de Elite", Ano = 2007, Avaliacao = 8, Sinopse = "Em 1997", Genero = "Ação" });
-            filme.Add(new Filme() { Nome = "Sing", Ano = 2016, Avaliacao = 7, Sinopse = "Numa ", Genero = "Animação" });
-            filme.Add(new Filme() { Nome = "Matrix", Ano = 2003, Avaliacao = 8, Sinopse = "filmezinho", Genero = "Ação" });
+            filme.Add(new Filme() { Nome = "Homem Aranha", Ano = 2002, Avaliacao = 7, Sinopse = "Quando o morde uma aranha, o inteligente, e tímido Peter Parker ganha habilidades que deberá usar para lutar contra o mal.", Genero = "Ação", msgErro = null });
+            filme.Add(new Filme() { Nome = "Batman", Ano = 2022, Avaliacao = 7, Sinopse = "Batman se aventura no submundo de Gotham City quando um assassino sádico deixa para trás um rastro de pistas enigmáticas.", Genero = "Ação", msgErro = null });
+            filme.Add(new Filme() { Nome = "Tropa de Elite", Ano = 2007, Avaliacao = 8, Sinopse = "Em 1997, o capitão Nascimento tem que encontrar seu substituto enquanto luta contra os narcotraficantes e criminais.", Genero = "Ação", msgErro = null });
+            filme.Add(new Filme() { Nome = "Sing", Ano = 2016, Avaliacao = 7, Sinopse = "Numa cidade de animais humanóides, o dono dum teatro organiza uma competiçao de canto para salvar seu teatro.", Genero = "Animação", msgErro = null });
+            filme.Add(new Filme() { Nome = "Matrix", Ano = 2003, Avaliacao = 8, Sinopse = "filmezinho", Genero = "Ação", msgErro = null });
             
             foreach (var f in filme)
-            {
-                f.Nome = txtNome.Text;
-                txtAno.Text = Convert.ToString(f.Ano);
-                txtAvaliacao.Text = Convert.ToString(f.Avaliacao);
-                f.Sinopse = txtSinopse.Text;
-                f.Genero = txtGenero.Text;
+            { 
+                dataGridView1.Rows.Add(f.nome, f.ano, f.avaliacao, f.sinopse, f.genero);
             }
             
             //Listar();
@@ -50,7 +46,16 @@ namespace Locadora
 
         private void btnAluga_Click(object sender, EventArgs e)
         {
-           
+            //
+            Filme f = new Filme();            
+            if (btnAluga.Focused)
+            {
+                MessageBox.Show($"{f.msgErro}", "Filme Alugado",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show($"{f.msgErro}", "Filme Alugado",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
         }
 
         public void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

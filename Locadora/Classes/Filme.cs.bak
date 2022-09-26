@@ -13,40 +13,39 @@ namespace Locadora
         public double avaliacao;
         public string sinopse;
         public string genero;
-        public string msgErro;
+		//private string msgErro;
 
         public string Nome { get => nome; set => nome = value; }
         public int Ano { get => ano; set => ano = value; }
         public double Avaliacao { get => avaliacao; set => avaliacao = value; }
         public string Sinopse { get => sinopse; set => sinopse = value; }
         public string Genero { get => genero; set => genero = value; }
-        //public string MsgErro { get => msgErro; set => msgErro = value; }
+        public static object Cells { get; internal set; }
 
-        public Filme(string nome, int ano, double avaliacao, string sinopse, string genero, string msgErro)
+        public Filme(string nome, int ano, double avaliacao, string sinopse, string genero)
         {
             this.nome = nome;
             this.ano = ano;
             this.avaliacao = avaliacao;
             this.sinopse = sinopse;
             this.genero = genero;
-            this.msgErro = msgErro;
         }
 
         public Filme(){}
 
-        public bool Aluga(bool btn)
+        public bool Aluga(string msgErro)
         {
-            double valorLoc = (this.ano / 1000) + this.avaliacao;
-            double multa = (this.ano / 1000) + (this.avaliacao*1.5);
+            double valorLoc = (this.ano/1000) + this.avaliacao;
+            double multa = (this.ano / 1000) + (this.avaliacao*2);
             //double Data = ;
             if (this.avaliacao > 0)
             {
-                 this.msgErro = $"Locadora: {valorLoc}; " +
+                 msgErro = $"Locadora: {valorLoc}; " +
                          $"Multa: ; {multa}" +
                          $"Data: Hoje + 7dias;";
                 return true;
             }
-            this.msgErro = "Erro!!, Dê um duplo clique em qualquer filme, Escolha um que você goste";
+            msgErro = "Erro!!, Dê um duplo clique em qualquer filme, Escolha um que você goste";
             return false;
         }
     }
