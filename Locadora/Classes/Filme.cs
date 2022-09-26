@@ -36,18 +36,29 @@ namespace Locadora
 
         public bool Aluga(bool btn)
         {
+<<<<<<< HEAD
             double valorLoc = (this.ano / 1000) + this.avaliacao;
             double multa = (this.ano / 1000) + (this.avaliacao*1.5);
             //double Data = ;
             if (this.avaliacao > 0)
+=======
+            if (!(this.nome))
+            {
+                return false;
+            }
+            else
+>>>>>>> 409b5296c5f1fb3b318e2f340011a5c9bae681a5
             {
                  this.msgErro = $"Locadora: {valorLoc}; " +
                          $"Multa: ; {multa}" +
                          $"Data: Hoje + 7dias;";
                 return true;
             }
+<<<<<<< HEAD
             this.msgErro = "Erro!!, Dê um duplo clique em qualquer filme, Escolha um que você goste";
             return false;
+=======
+>>>>>>> 409b5296c5f1fb3b318e2f340011a5c9bae681a5
         }
     }
 }
