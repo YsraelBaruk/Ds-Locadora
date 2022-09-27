@@ -30,6 +30,11 @@ namespace Locadora
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAluga = new System.Windows.Forms.Button();
             this.txtSinopse = new System.Windows.Forms.RichTextBox();
@@ -42,12 +47,6 @@ namespace Locadora
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataFilme = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,9 +69,39 @@ namespace Locadora
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nome";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Ano Lançamento";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Avaliação";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Sinopse";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 600;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Gênero";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataFilme);
             this.groupBox1.Controls.Add(this.btnAluga);
             this.groupBox1.Controls.Add(this.txtSinopse);
             this.groupBox1.Controls.Add(this.txtGenero);
@@ -84,6 +113,7 @@ namespace Locadora
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
@@ -161,7 +191,6 @@ namespace Locadora
             this.label5.TabIndex = 4;
             this.label5.Text = "Gênero";
             this.label5.UseWaitCursor = true;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -203,49 +232,6 @@ namespace Locadora
             this.label1.Text = "Nome";
             this.label1.UseWaitCursor = true;
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nome";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Ano Lançamento";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Avaliação";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Sinopse";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 600;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Gênero";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // dataFilme
-            // 
-            this.dataFilme.Enabled = false;
-            this.dataFilme.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dataFilme.Location = new System.Drawing.Point(54, 349);
-            this.dataFilme.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
-            this.dataFilme.MinDate = new System.DateTime(2022, 9, 27, 0, 0, 0, 0);
-            this.dataFilme.Name = "dataFilme";
-            this.dataFilme.Size = new System.Drawing.Size(155, 23);
-            this.dataFilme.TabIndex = 11;
-            this.dataFilme.Value = new System.DateTime(2022, 9, 27, 0, 0, 0, 0);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,7 +242,6 @@ namespace Locadora
             this.Name = "Form1";
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -284,7 +269,6 @@ namespace Locadora
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DateTimePicker dataFilme;
     }
 }
 

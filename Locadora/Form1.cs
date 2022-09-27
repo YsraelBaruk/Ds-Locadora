@@ -34,30 +34,16 @@ namespace Locadora
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        public void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAluga_Click(object sender, EventArgs e)
         {
             Filme movie = new Filme();
             int avaliacao;
             int ano;
-            string data;
 
-            //dataFilme.
-
-            data = Convert.ToString(dataFilme);
             avaliacao = Convert.ToInt32(txtAvaliacao.Text);
             ano = Convert.ToInt32(txtAno.Text);
 
-            MessageBox.Show($"{movie.Aluga(avaliacao, ano, data)}", "Filme Alugado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"{movie.Aluga(avaliacao, ano)}", "Filme Alugado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)

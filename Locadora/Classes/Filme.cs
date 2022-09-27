@@ -13,14 +13,12 @@ namespace Locadora
         public int avaliacao;
         public string sinopse;
         public string genero;
-        //public string msgErro;
 
         public string Nome { get => nome; set => nome = value; }
         public int Ano { get => ano; set => ano = value; }
         public int Avaliacao { get => avaliacao; set => avaliacao = value; }
         public string Sinopse { get => sinopse; set => sinopse = value; }
         public string Genero { get => genero; set => genero = value; }
-        //public string MsgErro { get => msgErro; set => msgErro = value; }
 
         public Filme(string nome, int ano, int avaliacao, string sinopse, string genero)
         {
@@ -33,22 +31,20 @@ namespace Locadora
 
         public Filme() { }
 
-        public string Aluga(int avaliacao, int ano, string data)
+        public string Aluga(int avaliacao, int ano)
         {
             string msgErro;
 
             this.avaliacao = avaliacao;
             this.ano = ano;
-
             if (avaliacao > 0 && ano > 1000)
             {
                 int valorLoc = (this.ano / 100) + this.avaliacao;
                 int multa = (this.ano / 100) + (this.avaliacao * 2);
-
+                
                 return msgErro = $"Locadora: R$ {valorLoc}.\n " +
                                  $"Multa: R$ {multa}.\n" +
-                                 $"Data: Devolva depois de 7 dias.\n" +
-                                 $"Data: {data + 7}";
+                                 $"Data: Devolva depois de 7 dias.\n";
             }
             else
             {
