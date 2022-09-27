@@ -135,6 +135,7 @@ namespace Locadora
             // 
             // txtSinopse
             // 
+            this.txtSinopse.Enabled = false;
             this.txtSinopse.Location = new System.Drawing.Point(9, 168);
             this.txtSinopse.Name = "txtSinopse";
             this.txtSinopse.Size = new System.Drawing.Size(208, 94);

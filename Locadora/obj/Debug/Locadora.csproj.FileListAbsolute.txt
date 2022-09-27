@@ -38,3 +38,13 @@ C:\Users\Aluno-ETEC\Desktop\ds\Ds-Locadora\Locadora\obj\Debug\Locadora.pdb
 C:\Users\Aluno-ETEC\Desktop\ds\Ds-Locadora\Locadora\bin\Debug\Locadora.exe.config
 C:\Users\Aluno-ETEC\Desktop\ds\Ds-Locadora\Locadora\bin\Debug\Locadora.exe
 C:\Users\Aluno-ETEC\Desktop\ds\Ds-Locadora\Locadora\bin\Debug\Locadora.pdb
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\bin\Debug\Locadora.exe.config
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\bin\Debug\Locadora.exe
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\bin\Debug\Locadora.pdb
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.csprojAssemblyReference.cache
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.Form1.resources
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.Properties.Resources.resources
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.GenerateResource.cache
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.CoreCompileInputs.cache
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.exe
+C:\Users\Aluno-ETEC\Desktop\Ds-Locadora\Locadora\obj\Debug\Locadora.pdb
