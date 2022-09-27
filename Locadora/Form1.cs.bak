@@ -37,23 +37,9 @@ namespace Locadora
             filme.Add(new Filme() { Nome = "Matrix", Ano = 2003, Avaliacao = 8, Sinopse = "filmezinho", Genero = "Ação", msgErro = null });
             
             foreach (var f in filme)
-<<<<<<< HEAD
             { 
                 dataGridView1.Rows.Add(f.nome, f.ano, f.avaliacao, f.sinopse, f.genero);
             }
-            
-            //Listar();
-=======
-            {
-                //f.Nome = txtNome.Text;
-                //txtAno.Text = Convert.ToString(f.Ano);
-                ////f.ano = Convert.ToInt32(txtAno);
-                //txtAvaliacao.Text = Convert.ToString(f.Avaliacao);
-                //f.Sinopse = txtSinopse.Text;
-                //f.Genero = txtGenero.Text;
-                dataGridView1.Rows.Add(f.nome, f.ano, f.avaliacao, f.sinopse, f.genero);
-            }                       
->>>>>>> 409b5296c5f1fb3b318e2f340011a5c9bae681a5
         }   
 
         private void btnAluga_Click(object sender, EventArgs e)

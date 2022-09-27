@@ -44,9 +44,9 @@ namespace Locadora
 
         private void btnAluga_Click(object sender, EventArgs e)
         {
-            //
-            Filme f = new Filme();            
-            if (btnAluga.Focused)
+            Filme f = new Filme();
+			Aluga();
+            if ()
             {
                 MessageBox.Show($"{f.msgErro}", "Filme Alugado",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
