@@ -30,11 +30,6 @@ namespace Locadora
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAluga = new System.Windows.Forms.Button();
             this.txtSinopse = new System.Windows.Forms.RichTextBox();
@@ -47,6 +42,12 @@ namespace Locadora
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataFilme = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -62,45 +63,16 @@ namespace Locadora
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(314, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(414, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(543, 393);
+            this.dataGridView1.Size = new System.Drawing.Size(1044, 393);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nome";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Ano Lançamento";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Avaliação";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Sinopse";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Gênero";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dataFilme);
             this.groupBox1.Controls.Add(this.btnAluga);
             this.groupBox1.Controls.Add(this.txtSinopse);
             this.groupBox1.Controls.Add(this.txtGenero);
@@ -115,7 +87,7 @@ namespace Locadora
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(242, 392);
+            this.groupBox1.Size = new System.Drawing.Size(324, 443);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filme";
@@ -124,7 +96,7 @@ namespace Locadora
             // btnAluga
             // 
             this.btnAluga.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.btnAluga.Location = new System.Drawing.Point(59, 333);
+            this.btnAluga.Location = new System.Drawing.Point(54, 396);
             this.btnAluga.Name = "btnAluga";
             this.btnAluga.Size = new System.Drawing.Size(87, 29);
             this.btnAluga.TabIndex = 10;
@@ -138,7 +110,7 @@ namespace Locadora
             this.txtSinopse.Enabled = false;
             this.txtSinopse.Location = new System.Drawing.Point(9, 168);
             this.txtSinopse.Name = "txtSinopse";
-            this.txtSinopse.Size = new System.Drawing.Size(208, 94);
+            this.txtSinopse.Size = new System.Drawing.Size(292, 94);
             this.txtSinopse.TabIndex = 9;
             this.txtSinopse.Text = "";
             this.txtSinopse.UseWaitCursor = true;
@@ -148,7 +120,7 @@ namespace Locadora
             this.txtGenero.Enabled = false;
             this.txtGenero.Location = new System.Drawing.Point(115, 281);
             this.txtGenero.Name = "txtGenero";
-            this.txtGenero.Size = new System.Drawing.Size(102, 23);
+            this.txtGenero.Size = new System.Drawing.Size(186, 23);
             this.txtGenero.TabIndex = 8;
             this.txtGenero.UseWaitCursor = true;
             // 
@@ -157,7 +129,7 @@ namespace Locadora
             this.txtAvaliacao.Enabled = false;
             this.txtAvaliacao.Location = new System.Drawing.Point(115, 112);
             this.txtAvaliacao.Name = "txtAvaliacao";
-            this.txtAvaliacao.Size = new System.Drawing.Size(102, 23);
+            this.txtAvaliacao.Size = new System.Drawing.Size(186, 23);
             this.txtAvaliacao.TabIndex = 7;
             this.txtAvaliacao.UseWaitCursor = true;
             // 
@@ -166,7 +138,7 @@ namespace Locadora
             this.txtAno.Enabled = false;
             this.txtAno.Location = new System.Drawing.Point(115, 73);
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(102, 23);
+            this.txtAno.Size = new System.Drawing.Size(186, 23);
             this.txtAno.TabIndex = 6;
             this.txtAno.UseWaitCursor = true;
             this.txtAno.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -176,7 +148,7 @@ namespace Locadora
             this.txtNome.Enabled = false;
             this.txtNome.Location = new System.Drawing.Point(115, 32);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(102, 23);
+            this.txtNome.Size = new System.Drawing.Size(186, 23);
             this.txtNome.TabIndex = 5;
             this.txtNome.UseWaitCursor = true;
             // 
@@ -231,15 +203,59 @@ namespace Locadora
             this.label1.Text = "Nome";
             this.label1.UseWaitCursor = true;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nome";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Ano Lançamento";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Avaliação";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Sinopse";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 600;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Gênero";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // dataFilme
+            // 
+            this.dataFilme.Enabled = false;
+            this.dataFilme.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dataFilme.Location = new System.Drawing.Point(54, 349);
+            this.dataFilme.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
+            this.dataFilme.MinDate = new System.DateTime(2022, 9, 27, 0, 0, 0, 0);
+            this.dataFilme.Name = "dataFilme";
+            this.dataFilme.Size = new System.Drawing.Size(155, 23);
+            this.dataFilme.TabIndex = 11;
+            this.dataFilme.Value = new System.DateTime(2022, 9, 27, 0, 0, 0, 0);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 468);
+            this.ClientSize = new System.Drawing.Size(1156, 476);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -268,6 +284,7 @@ namespace Locadora
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DateTimePicker dataFilme;
     }
 }
 

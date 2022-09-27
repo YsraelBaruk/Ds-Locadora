@@ -49,10 +49,15 @@ namespace Locadora
             Filme movie = new Filme();
             int avaliacao;
             int ano;
+            string data;
+
+            //dataFilme.
+
+            data = Convert.ToString(dataFilme);
             avaliacao = Convert.ToInt32(txtAvaliacao.Text);
             ano = Convert.ToInt32(txtAno.Text);
 
-            MessageBox.Show($"{movie.Aluga(avaliacao, ano)}", "Filme Alugado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"{movie.Aluga(avaliacao, ano, data)}", "Filme Alugado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
