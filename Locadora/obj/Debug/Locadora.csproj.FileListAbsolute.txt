@@ -58,3 +58,13 @@ C:\Users\Aluno-ETEC\Desktop\a\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.Gen
 C:\Users\Aluno-ETEC\Desktop\a\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.CoreCompileInputs.cache
 C:\Users\Aluno-ETEC\Desktop\a\Ds-Locadora\Locadora\obj\Debug\Locadora.exe
 C:\Users\Aluno-ETEC\Desktop\a\Ds-Locadora\Locadora\obj\Debug\Locadora.pdb
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.AssemblyReference.cache
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.Form1.resources
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.Properties.Resources.resources
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.GenerateResource.cache
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.csproj.CoreCompileInputs.cache
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.exe
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\obj\Debug\Locadora.pdb
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\bin\Debug\Locadora.exe.config
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\bin\Debug\Locadora.exe
+C:\Users\israe\OneDrive - Etec Centro Paula Souza\2022 - School\Apresentação Ou Tasks\22-09-20 DS Apresentação\Projeto Pronto\c#\Ds-Locadora\Locadora\bin\Debug\Locadora.pdb

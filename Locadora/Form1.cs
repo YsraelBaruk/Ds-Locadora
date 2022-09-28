@@ -36,14 +36,6 @@ namespace Locadora
 
         private void btnAluga_Click(object sender, EventArgs e)
         {
-            Filme movie = new Filme();
-            int avaliacao;
-            int ano;
-
-            avaliacao = Convert.ToInt32(txtAvaliacao.Text);
-            ano = Convert.ToInt32(txtAno.Text);
-
-            MessageBox.Show($"{movie.Aluga(avaliacao, ano)}", "Filme Alugado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -58,6 +50,18 @@ namespace Locadora
 
         private void GroupBox1_Enter(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Filme movie = new Filme();
+            int avaliacao;
+            int ano;
+
+            avaliacao = Convert.ToInt32(txtAvaliacao.Text);
+            ano = Convert.ToInt32(txtAno.Text);
+
+            MessageBox.Show($"{movie.Aluga(avaliacao, ano)}", "Filme Alugado", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
